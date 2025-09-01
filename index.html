@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes Web App</title>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1><i class="fas fa-sticky-note"></i> Notes App</h1>
+
+        <textarea id="noteInput" placeholder="Write your note here..." required></textarea>
+        <button id="saveNote">
+            <i class="fas fa-save"></i> Save Note
+        </button>
+
+        <div id="notesContainer">
+            <!-- Notes will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
